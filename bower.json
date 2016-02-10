@@ -1,0 +1,13 @@
+{
+  "name": "Framework7.Angular.Cordova",
+  "directory": "www/bower_components",
+  "dependencies": {
+    "font-awesome": "4.5.0",
+    "angular": "angularjs#~1.5.0",
+    "jquery": "~2.2.0",
+    "angular-ui-router": "~0.2.18"
+  },
+  "devDependencies": {
+    "framework7": "1.4.0"
+  }
+}

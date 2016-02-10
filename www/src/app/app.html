@@ -1,0 +1,22 @@
+<!--
+ Created By : Maicon Wagner dos Santos
+ -->
+
+<div class="panel-overlay"></div>
+
+
+
+<!-- Left Panel with Reveal effect -->
+<div class="panel panel-left panel-cover">
+  <div class="content-block">
+    <p>Left Panel content here</p>
+    <!-- Click on link with "close-panel" class will close panel -->
+    <p><a href="#" class="close-panel">Fechar Menu</a></p>
+    <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
+    <p><a href="#" data-panel="right" class="open-panel">Abrir Painel Direito</a></p>
+  </div>
+</div>
+
+<div class="view view-main">
+  <div ui-view="AppContent" class="pages navbar-fixed"></div>
+</div>

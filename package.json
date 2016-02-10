@@ -1,5 +1,5 @@
 {
-  "name": "Framework7.Angular.Cordova",
+  "name": "Framework7.Angular.PhonegapCordova",
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {

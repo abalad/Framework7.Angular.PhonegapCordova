@@ -13,14 +13,14 @@
 /*global angular*/
 angular.module('f7.app')
 
-.controller('HomeController', ['$scope', '$rootScope', '$stateParams', '$log', '$q', 'framework7',
+.controller('HomeController', ['$scope', 'framework7',
 
-    function($scope, $rootScope, $stateParams, $log, $q, Framework7) {
+    function($scope, Framework7) {
     	$scope.coolVariable = 'home';
     	$scope.coolMethod = function(){
     		console.log('This is a sample method');
     	};
       // var mainView = Framework7.getInstance().addView('.view-main', {});
-      var viewInstance = Framework7.registerView("mainView",".main-view",{});
-  }
+     //var viewInstance = Framework7.registerView("mainView",".main-view",{});
+ 	}
 ]);

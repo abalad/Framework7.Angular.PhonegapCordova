@@ -64,7 +64,7 @@ angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directive
         // });
         $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
             setTimeout(function() {
-                Framework7.getInstance().initPage($('.pages'));
+                Framework7.getInstance().initPage(('.pages'));
             });
         });
         // $rootScope.$on('$viewContentLoading', function(event, toState, toParams, fromState, fromParams) {

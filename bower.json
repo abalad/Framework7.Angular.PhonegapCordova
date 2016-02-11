@@ -1,6 +1,6 @@
 {
   "name": "Framework7.Angular.PhonegapCordova",
-  "directory": "www/bower_components",
+  "directory": "www/lib",
   "dependencies": {
     "font-awesome": "4.5.0",
     "angular": "angularjs#~1.5.0",

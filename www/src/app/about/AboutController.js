@@ -13,7 +13,7 @@
 
 angular.module('f7.app')
 
-.controller('about', ["$scope", "$rootScope", "$stateParams", "$log", "$q",
+.controller('AboutController', ["$scope", "$rootScope", "$stateParams", "$log", "$q",
 
     function($scope, $rootScope, $stateParams, $log, $q) {
     	$scope.coolVariable = "about";

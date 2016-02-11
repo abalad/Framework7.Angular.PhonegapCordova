@@ -41,7 +41,7 @@ angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directive
                 views: {
                     AppContent: {
                         templateUrl: 'src/app/about/about.html',
-                        controller: 'about'
+                        controller: 'AboutController'
                     }
                 }
             })
@@ -50,7 +50,7 @@ angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directive
                 views: {
                     AppContent: {
                         templateUrl: 'src/app/home/home.html',
-                        controller: 'home'
+                        controller: 'HomeController'
                     }
                 }
             })

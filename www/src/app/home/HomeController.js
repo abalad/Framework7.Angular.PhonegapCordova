@@ -13,7 +13,7 @@
 /*global angular*/
 angular.module('f7.app')
 
-.controller('home', ['$scope', '$rootScope', '$stateParams', '$log', '$q', 'framework7',
+.controller('HomeController', ['$scope', '$rootScope', '$stateParams', '$log', '$q', 'framework7',
 
     function($scope, $rootScope, $stateParams, $log, $q, Framework7) {
     	$scope.coolVariable = 'home';

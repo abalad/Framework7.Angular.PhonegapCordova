@@ -14,7 +14,11 @@ angular.module('f7.filters', []); // filter
 angular.module('f7.factories', []); // helper
 angular.module('f7.directives', []); // directives
 
-angular.module('f7.libs', ['ui.router']);
+angular.module('f7.libs', [
+        'ui.router',
+        'oc.lazyLoad'
+    ]
+);
 
 angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directives', 'f7.app', 'f7.libs'])
 
@@ -43,6 +47,13 @@ angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directive
                         templateUrl: 'src/app/about/about.html',
                         controller: 'AboutController'
                     }
+                },
+                resolve: {
+                    plugins: ['$ocLazyLoad', function($ocLazyLoad) {
+                        return $ocLazyLoad.load([
+                           // 'src/app/about/AboutController.js'
+                        ]);
+                    }]
                 }
             })
             .state('app.home', {

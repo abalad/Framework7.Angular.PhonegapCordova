@@ -15,7 +15,7 @@ describe('HomeController', function() {
         it('sets the strength to "strong" if the password length is >8 chars', function() {
             var $scope = {};
             var controller = $controller('HomeController', { $scope: $scope, framework7:Framework7 });
-            expect($scope.coolMethod()).toEqual(10);
+            expect($scope.coolVariable).toEqual('home');
         });
     });
 });

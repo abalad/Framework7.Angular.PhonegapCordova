@@ -16,7 +16,7 @@ module.exports = function(config) {
     files: [
       //Bower
       'www/lib/angular/angular.js',
-      'www/lib/angular-route/angular-route.js',
+      'www/lib/angular-ui-router/release/angular-ui-router.min.js',
       'www/lib/angular-mocks/angular-mocks.js',
       'www/lib/framework7/dist/js/framework7.min.js',
 
@@ -67,8 +67,10 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
-    //browsers: ['PhantomJS'],
+    browsers: [
+      'PhantomJS'
+      //'Chrome'
+    ],
 
 
 
@@ -80,4 +82,4 @@ module.exports = function(config) {
     // how many browser should be started simultaneous
     concurrency: Infinity
   })
-}
+};

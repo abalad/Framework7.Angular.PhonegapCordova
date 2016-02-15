@@ -6,13 +6,13 @@ module.exports = function(grunt) {
                 livereload: true
             },
             css: {
-                files: ['www/css/*.scss']
+                files: ['www/index.css','www/app/modules/**/*.scss','www/app/modules/**/*.css']
             },
             js: {
-                files: ['www/src/*.js']
+                files: ['www/app/*.js','www/app/modules/**/*.js']
             },
             html: {
-                files: ['www/index.html','/*.html','www/src/app/*/*.html']
+                files: ['www/index.html','www/app/app.html','www/app/modules/**/*.html']
             }
         },
         connect: {

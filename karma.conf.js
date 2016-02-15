@@ -15,19 +15,21 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       //Bower
-      'www/lib/angular/angular.js',
-      'www/lib/angular-ui-router/release/angular-ui-router.min.js',
-      'www/lib/angular-mocks/angular-mocks.js',
-      'www/lib/framework7/dist/js/framework7.min.js',
+      'www/vendors/angular/angular.js',
+      'www/vendors/angular-ui-router/release/angular-ui-router.min.js',
+      'www/vendors/angular-mocks/angular-mocks.js',
+      'www/vendors/framework7/dist/js/framework7.min.js',
 
        //App
-      'www/src/app.js',
-      'www/src/app/home/*.js',
-      'www/src/factories/framework7.factory.js',
-      'www/src/factories/extends.factory.js',
+      'www/app/app.js',
+      'www/app/modules/**/*.js',
+
+      //Framework7-Factories
+      'www/app/factories/framework7.factory.js',
+      'www/app/factories/extends.factory.js',
 
       //Tests
-      'test/unit/controllers/**/*.js'
+      'test/app/modules/**/*.js'
     ],
 
 

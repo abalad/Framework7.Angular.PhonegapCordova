@@ -14,6 +14,7 @@ angular.module('f7.filters', []); // filter
 angular.module('f7.factories', []); // helper
 angular.module('f7.directives', []); // directives
 
+
 angular.module('f7.libs', [
         'ui.router',
         'oc.lazyLoad'
@@ -35,37 +36,12 @@ angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directive
 
     .config(function($stateProvider, $urlRouterProvider) {
 
+        //Fora o /app, cada endereço de route esta contida em seu modulo(/modules/NameModule/namemodule.route.js)
         $stateProvider
             .state('app', {
                 url: '/app',
-                templateUrl: 'src/app/app.html'
+                templateUrl: 'app/app.html'
             })
-            .state('app.about', {
-                url: '/about',
-                views: {
-                    AppContent: {
-                        templateUrl: 'src/app/about/about.html',
-                        controller: 'AboutController'
-                    }
-                },
-                resolve: {
-                    plugins: ['$ocLazyLoad', function($ocLazyLoad) {
-                        return $ocLazyLoad.load([
-                           // 'src/app/about/AboutController.js'
-                        ]);
-                    }]
-                }
-            })
-            .state('app.home', {
-                url: '/home',
-                views: {
-                    AppContent: {
-                        templateUrl: 'src/app/home/home.html',
-                        controller: 'HomeController'
-                    }
-                }
-            })
-        //~!states!~
         $urlRouterProvider.otherwise("/app/home");
     })
     .controller('root.controller', ['$rootScope','$state', 'framework7',function($rootScope, $state, Framework7) {
